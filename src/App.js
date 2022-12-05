@@ -20,7 +20,6 @@ function App() {
 					<BsSliders className="sliders-icon" />
 				</a>
 			</nav>
-
 			<main className="main col">
 				<section className="hero">
 					<h1>
@@ -28,7 +27,6 @@ function App() {
 					</h1>
 					<h2>hacktinium</h2>
 				</section>
-
 				<section className="projects col">
 					<div className="separator"></div>
 					<h3>
