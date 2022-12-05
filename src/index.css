@@ -1,3 +1,4 @@
+/* !Variables / Reset */
 :root {
 	/* Colours */
 	--lightest-blue: #bbd5ed;
@@ -12,11 +13,36 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+/* !Utility Classes */
+.col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* TODO: Move this style (gap) into its own utility class */
+	gap: 44px;
+}
+.row {
+	display: flex;
+	align-items: center;
+}
+.separator {
+	width: 78px;
+	height: 1px;
+	background-color: var(--lightest-blue);
+	border-radius: 0.5px;
+}
+
+/* !Generic Styling */
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-family: arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: var(--lightest-blue);
+}
+.main {
+	width: 90%;
+	gap: 132px;
 }
 h3 {
 	color: var(--medium-blue);
@@ -26,25 +52,16 @@ h3 span {
 	color: var(--strong-yellow);
 	font-weight: 400;
 }
+img {
+	width: 100%;
+}
+p {
+	font-size: 20px;
+}
+
+/* !App */
 .App {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
 	background-color: var(--dark-blue);
-}
-.readme {
-	text-align: center;
-}
-.readme p {
-	width: 60ch;
-}
-.skills {
-	text-align: center;
-}
-.skills p {
-	width: 60ch;
 }
 .bgImgTop {
 	width: 100%;
@@ -53,12 +70,22 @@ h3 span {
 	transform: rotate(180deg);
 	mix-blend-mode: multiply;
 }
-.separator {
-	width: 78px;
-	height: 1px;
-	background-color: var(--lightest-blue);
+
+/* !Header */
+.header {
+	justify-content: space-between;
+	width: 90%;
+	margin-top: 36px;
 }
+.sliders-icon {
+	color: var(--medium-blue);
+	width: 25px;
+	height: 25px;
+}
+
+/* !Hero */
 .hero h1 {
+	margin-top: 370px;
 	font-family: arial, sans-serif;
 	font-size: clamp(42px, 13vw, 128px);
 	/*! Need to d/l 'bold' weight */
@@ -81,85 +108,139 @@ h3 span {
 .hero span {
 	display: inline-block;
 }
-.contact-form input{
-	display:block;
-	width: 100%;
+
+/* !Readme */
+.readme {
+	text-align: center;
 }
-.contact-form select{
-	display:block;
-	width: 100%;
+.readme p {
+	max-width: 60ch;
 }
-.contact-form textarea{
-	display:block;
+
+/* !Skills */
+.skills {
+	text-align: center;
+}
+.skills p {
+	max-width: 60ch;
+}
+
+/* !Contact-form */
+.contact-form form {
+	width: 300px;
+}
+.contact-form input::placeholder,
+textarea::placeholder {
+	color: var(--medium-blue);
+}
+.contact-form label {
+	color: var(--medium-blue);
+	opacity: 70%;
+}
+/* TODO: Find a way to do this with flex and no 'width' */
+.contact-form input,
+select,
+textarea,
+button {
+	font-size: medium;
+	color: var(--medium-blue);
+	margin: 10px 0 44px 0;
 	width: 100%;
+	padding: 12px;
+	font-family: arial, sans-serif;
+	display: block;
+	background-color: var(--dark-blue);
+	border: 2px solid var(--medium-blue);
+	border-radius: 0.4rem;
+}
+.contact-form textarea {
+	height: 123px;
+	resize: none;
 }
 .contact-form h3 span {
 	color: var(--strong-yellow);
 	font-style: italic;
 }
+.contact-form button {
+	color: var(--dark-blue);
+	background-color: var(--medium-blue);
+	font-weight: 600;
+}
+.contact-form button:hover {
+	cursor: pointer;
+}
 
+/* !Footer */
+footer {
+	margin-bottom: 50px;
+}
+footer p {
+	font-size: 16px;
+}
 
-/* switch */
-
+/* !Swicth */
 /* The switch - the box around the slider */
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+	position: relative;
+	display: inline-block;
+	width: 35px;
+	height: 19px;
 }
-
 /* Hide default HTML checkbox */
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+	opacity: 0;
+	width: 0;
+	height: 0;
 }
-
 /* The slider */
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--dark-blue);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	box-shadow: 0 0 0 2.5px var(--medium-blue);
 }
-
+/* The slider 'dot' */
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+	position: absolute;
+	content: "";
+	height: 15px;
+	width: 15px;
+	left: 2px;
+	bottom: 2px;
+	background-color: var(--medium-blue);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
-
+/* TODO: Complete these below styles */
+/* input:focus + .slider {
+	box-shadow: 0 0 0 .5rem var(--lightest-blue);
+} */
+/* input:hover + .slider {
+	box-shadow: 0 0 0 .5rem var(--lightest-blue);
+} */
+/* The checked slider */
 input:checked + .slider {
-  background-color: #2196F3;
+	box-shadow: 0 0 0 2.5px var(--medium-blue);
+	background-color: var(--medium-blue);
 }
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
+/* The checked slider 'dot' */
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+	background-color: var(--dark-blue);
+	-webkit-transform: translateX(16px);
+	-ms-transform: translateX(16px);
+	transform: translateX(16px);
 }
-
-/* Rounded sliders */
+/* Rounded slider */
 .slider.round {
-  border-radius: 34px;
+	border-radius: 34px;
 }
-
+/* Rounded slider 'dot' */
 .slider.round:before {
-  border-radius: 50%;
+	border-radius: 50%;
 }
