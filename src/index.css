@@ -20,7 +20,3 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	color: var(--lightest-blue);
 }
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
