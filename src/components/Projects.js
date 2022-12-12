@@ -1,3 +1,4 @@
+import "./Projects.css";
 import projects_placeholder from "../assets/projects_placeholder.png";
 
 const Projects = () => {

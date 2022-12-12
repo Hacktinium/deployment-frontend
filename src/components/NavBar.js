@@ -1,3 +1,4 @@
+import "./NavBar.css";
 import { BsSliders } from "react-icons/bs";
 
 const NavBar = () => {

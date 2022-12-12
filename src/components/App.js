@@ -1,4 +1,4 @@
-import "../index.css";
+import "./App.css";
 // import bgImgTop from "../assets/bgImgTop.jpg";
 import NavBar from "./NavBar";
 import Hero from "./Hero";

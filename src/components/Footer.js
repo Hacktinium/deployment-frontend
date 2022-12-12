@@ -1,3 +1,4 @@
+import "./Footer.css";
 import socials_icons_placeholder from "../assets/socials-icons-placeholder.png";
 
 const Footer = () => {

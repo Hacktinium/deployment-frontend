@@ -1,3 +1,4 @@
+import "./Skills.css";
 import skills_icons_placeholder from "../assets/skills-icons-placeholder.png";
 
 const Skills = () => {
