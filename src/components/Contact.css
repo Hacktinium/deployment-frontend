@@ -19,7 +19,9 @@ button {
 	margin: 10px 0 44px 0;
 	width: 100%;
 	padding: 12px;
-	font-family: arial, sans-serif;
+	/* font-family: arial, sans-serif; */
+	font-family: "Space Grotesk", sans-serif;
+
 	display: block;
 	background-color: var(--dark-blue);
 	border: 2px solid var(--medium-blue);

@@ -24,6 +24,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Space Grotesk", sans-serif;
+
 }
 
 /* !Utility Classes */
@@ -47,7 +49,7 @@
 
 /* !Global Styles */
 body {
-	font-family: arial, sans-serif;
+	/* font-family: arial, sans-serif; */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: var(--lightest-blue);
