@@ -1,5 +1,7 @@
+import Card from "./Card";
+import projects from '../db/db'
 import "./Projects.css";
-import projects_placeholder from "../assets/projects_placeholder.png";
+
 
 const Projects = () => {
 	return (
@@ -8,9 +10,18 @@ const Projects = () => {
 			<h3>
 				<span>./</span>projects
 			</h3>
-			<a href="">
-				<img className="projects_placeholder" alt="" src={projects_placeholder} />
-			</a>
+			<div className="cards-container">
+				{projects.map((project) => {
+								return (
+									<Card
+										title={project.title}
+										thumbnail={project.thumbnail_url}
+										link={project.link}
+										key={project.id}
+									/>
+								);
+							})}
+			</div>
 		</section>
 	);
 };

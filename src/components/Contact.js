@@ -8,11 +8,11 @@ const Contact = () => {
 				<span>function </span>getInTouch( )
 			</h3>
 			<form>
-				<label HTMLfor="name">
+				<label htmlFor="name">
 					Name
 					<input id="name" placeholder="Ada Lovelace"></input>
 				</label>
-				<label HTMLfor="topic">
+				<label htmlFor="topic">
 					Topic
 					<select id="topic">
 						<option>Hire me!</option>
@@ -20,7 +20,7 @@ const Contact = () => {
 						<option>What shall we talk about?</option>
 					</select>
 				</label>
-				<label HTMLfor="message">
+				<label htmlFor="message">
 					Message
 					<textarea name="message" id="message" placeholder="A penny for your thoughts..."></textarea>
 				</label>
