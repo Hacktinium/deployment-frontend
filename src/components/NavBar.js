@@ -2,7 +2,7 @@ import { BsSliders } from "react-icons/bs";
 
 const NavBar = () => {
 	return (
-		<nav className="header row">
+		<nav className="nav-bar row">
 			<label class="switch">
 				<input type="checkbox" />
 				<span class="slider round"></span>

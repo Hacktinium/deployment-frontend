@@ -1,0 +1,11 @@
+.App {
+	gap: 132px;
+	background-color: var(--dark-blue);
+}
+/* .bgImgTop {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	transform: rotate(180deg);
+	mix-blend-mode: multiply;
+} */

@@ -1,6 +1,6 @@
 const Contact = () => {
 	return (
-		<section className="contact-form col">
+		<section className="contact col">
 			<div className="separator"></div>
 			<h3>
 				<span>function </span>getInTouch( )

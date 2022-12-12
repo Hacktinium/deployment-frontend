@@ -1,0 +1,43 @@
+.contact form {
+	width: 300px;
+}
+.contact input::placeholder,
+textarea::placeholder {
+	color: var(--medium-blue);
+}
+.contact label {
+	color: var(--medium-blue);
+	opacity: 70%;
+}
+/* TODO: Find a way to do this with flex and no 'width' */
+.contact input,
+select,
+textarea,
+button {
+	font-size: medium;
+	color: var(--medium-blue);
+	margin: 10px 0 44px 0;
+	width: 100%;
+	padding: 12px;
+	font-family: arial, sans-serif;
+	display: block;
+	background-color: var(--dark-blue);
+	border: 2px solid var(--medium-blue);
+	border-radius: 0.4rem;
+}
+.contact textarea {
+	height: 123px;
+	resize: none;
+}
+.contact h3 span {
+	color: var(--strong-yellow);
+	font-style: italic;
+}
+.contact button {
+	color: var(--dark-blue);
+	background-color: var(--medium-blue);
+	font-weight: 600;
+}
+.contact button:hover {
+	cursor: pointer;
+}
