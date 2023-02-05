@@ -9,7 +9,7 @@ const NavBar = () => {
 				<span className="slider round"></span>
 			</label>
 			{/* TODO: Change this styling to be accessible */}
-			<a href="">
+			<a href="test">
 				<BsSliders className="sliders-icon" />
 			</a>
 		</nav>
