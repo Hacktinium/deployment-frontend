@@ -2,8 +2,8 @@ import "./About.css";
 
 const About = () => {
 	return (
-		<section className="about col">
-			<div className="separator"></div>
+		<section className="about col centre">
+			{/* <div className="separator"></div> */}
 			<h3>
 				README<span>.md</span>
 			</h3>

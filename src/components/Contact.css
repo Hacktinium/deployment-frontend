@@ -1,5 +1,6 @@
 .contact form {
 	width: 300px;
+	text-align: left;
 }
 .contact input::placeholder,
 textarea::placeholder {

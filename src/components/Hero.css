@@ -1,9 +1,9 @@
+.hero {
+	padding-block-start: 30vh;
+	padding-block-end: 80vh;
+}
 .hero h1 {
-	margin-top: 238px;
-	/* font-family: arial, sans-serif;
-	 */
-	 font-family: "Space Grotesk", sans-serif;
-
+	font-family: "Space Grotesk", sans-serif;
 	font-size: clamp(42px, 13vw, 128px);
 	/*! Need to d/l 'bold' weight */
 	font-weight: 700;
@@ -23,7 +23,4 @@
 }
 .hero h2::after {
 	content: "}";
-}
-.hero span {
-	display: inline-block;
 }

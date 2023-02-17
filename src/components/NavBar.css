@@ -1,7 +1,5 @@
 .navbar {
 	justify-content: space-between;
-	width: 90%;
-	margin-top: 36px;
 }
 .sliders-icon {
 	color: var(--medium-blue);

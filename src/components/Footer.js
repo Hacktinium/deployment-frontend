@@ -3,7 +3,7 @@ import socials_icons_placeholder from "../assets/socials-icons-placeholder.png";
 
 const Footer = () => {
 	return (
-		<footer className="col">
+		<footer className="col centre">
 			<a href="test">
 				<img className="skills-icons-placeholder" alt="social links" src={socials_icons_placeholder} />
 			</a>
