@@ -2,52 +2,91 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 .slider-wrapper {
-  width: 80%;
-  margin: 0 auto;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .skills p {
 	max-width: 60ch;
-  align-self: center;
+	align-self: center;
 }
 
 .slide {
-  transform: scale(0.5);
-  transition: transform 300ms;
-  opacity: 0.5;
+	transform: scale(0);
+	transition: transform 300ms;
+	opacity: 0;
 }
 
 .slick-track {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .activeSlide {
-  transform: scale(1);
-  opacity: 1;
+	transform: scale(1);
+	opacity: 1;
+}
+
+.rightEdgeSlide {
+	transform: scale(0.3) translateX(-100px);
+	opacity: 0.3;
+}
+
+.rightEdgeSlide_ {
+	transform: scale(0.3) translateX(-100px);
+	opacity: 0.3;
+}
+
+.leftEdgeSlide {
+	transform: scale(0.3) translateX(100px);
+	opacity: 0.3;
+}
+
+.leftEdgeSlide_ {
+	transform: scale(0.3) translateX(100px);
+	opacity: 0.3;
+}
+
+.rightAdjacentSlide {
+	transform: scale(0.6);
+	opacity: 0.6;
+}
+
+.rightAdjacentSlide_ {
+	transform: scale(0.6);
+	opacity: 0.6;
+}
+
+.leftAdjacentSlide {
+	transform: scale(0.6);
+	opacity: 0.6;
+}
+
+.leftAdjacentSlide_ {
+	transform: scale(0.6);
+	opacity: 0.6;
 }
 
 .arrow {
-  position: absolute;
-  cursor: pointer;
-  z-index: 10;
+	position: absolute;
+	cursor: pointer;
+	z-index: 10;
 }
 
 .arrow svg {
-  transition: color 300ms;
+	transition: color 300ms;
 }
 
 .arrow svg:hover {
-  color: #68edff;
+	color: #68edff;
 }
 
 .next {
-  right: 0%;
-  top: 50%;
+	right: 0%;
+	top: 50%;
 }
 
 .prev {
-  left: 0%;
-  top: 50%;
+	left: 0%;
+	top: 50%;
 }
-

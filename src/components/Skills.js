@@ -1,5 +1,6 @@
 import "./Skills.css";
 import { useState } from "react";
+import cx from "classnames";
 import Slider from "react-slick";
 import html5 from "../assets/skills-icons/html5.svg";
 import css3 from "../assets/skills-icons/css3.svg";
@@ -29,9 +30,9 @@ const Skills = () => {
 	};
 
 	const [imageIndex, setImageIndex] = useState(0);
+	console.log(`imageIndex= ${imageIndex}`);
 
 	const settings = {
-		// fade: true,
 		infinite: true,
 		lazyLoad: true,
 		speed: 300,
@@ -44,15 +45,6 @@ const Skills = () => {
 		beforeChange: (current, next) => setImageIndex(next),
 	};
 
-	// import cx from 'classnames';
-
-	// <li className={cx('list-group-item', {
-	// 	 'alert alert-danger': value === 3,
-	// 	 'alert alert-info': value === 1,
-	// 	 'alert alert-warning': value === 2,
-	// 	 'strike-through': todo.completed,
-	// })} />
-
 	return (
 		<section className="skills col">
 			{/* <div className="separator"></div> */}
@@ -62,7 +54,36 @@ const Skills = () => {
 			<div className="slider-wrapper">
 				<Slider {...settings}>
 					{icons.map((img, idx) => (
-						<div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
+						<div
+							key={idx}
+							className={cx("slide", {
+								activeSlide: idx === imageIndex,
+
+								// targets the slide that is 2 to the right of the active slide when active slide index is < icons.length - 2
+								rightEdgeSlide: imageIndex < icons.length - 2 && idx === imageIndex + 2,
+								// targets the slide that is 2 to the right of the active slide when active slide index is >= icons.length - 2
+								rightEdgeSlide_: imageIndex >= icons.length - 2 && idx === imageIndex + 2 - icons.length,
+
+								// targets the slide that is 2 to the left of the active slide when active slide index is < 2
+								leftEdgeSlide: imageIndex < 2 && idx === imageIndex + icons.length - 2,
+								// targets the slide that is 2 to the left of the active slide when active slide index is >= 2
+								leftEdgeSlide_: imageIndex >= 2 && idx === imageIndex - 2,
+
+								
+
+
+
+								// targets the slide that is 2 to the right of the active slide when active slide index is < icons.length - 2
+								rightAdjacentSlide: imageIndex < icons.length - 1 && idx === imageIndex + 1,
+								// targets the slide that is 2 to the right of the active slide when active slide index is >= icons.length - 2
+								rightAdjacentSlide_: imageIndex >= icons.length - 1 && idx === imageIndex + 1 - icons.length,
+
+								// targets the slide that is 2 to the left of the active slide when active slide index is < 2
+								leftAdjacentSlide: imageIndex < 1 && idx === imageIndex + icons.length - 1,
+								// targets the slide that is 2 to the left of the active slide when active slide index is >= 2
+								leftAdjacentSlide_: imageIndex >= 1 && idx === imageIndex - 1,
+							})}
+						>
 							<img src={img} alt={img} />
 						</div>
 					))}
