@@ -8,9 +8,12 @@ const About = () => {
 				README<span>.md</span>
 			</h3>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dolor vitae, diam velit venenatis quis nunc cursus. Integer sem lobortis diam vitae tincidunt hac. Tortor hac mi adipiscing
-				ornare dolor quis. Rhoncus vitae rhoncus sit vel purus, aenean sed est. Egestas vitae dignissim diam interdum dictum landit lacus, diam nisi. Felis, mi convallis pulvinar feugiat id urna. Id
-				quam egestas fringilla amet nisl facilisis.
+				Hey there! I'm Steve, a junior full-stack dev based near Cambridge, UK.
+				<br />
+				I recently graduated the School of Code full-stack web development bootcamp and I'm now seeking my first role in the industry.
+				<br />
+				<br />
+				When I'm not building (check out my projects below!), I enjoy gaming, hiking, camping, astronomy and watching Studio Ghibli films 💖 
 			</p>
 		</section>
 	);
