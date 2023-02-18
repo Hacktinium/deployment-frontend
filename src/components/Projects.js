@@ -5,7 +5,7 @@ import "./Projects.css";
 
 const Projects = () => {
 	return (
-		<section className="projects col centre">
+		<section id='Projects' className="projects col centre">
 			{/* <div className="separator"></div> */}
 			<h3>
 				<span>./</span>projects

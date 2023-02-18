@@ -40,7 +40,11 @@ button {
 	color: var(--dark-blue);
 	background-color: var(--medium-blue);
 	font-weight: 600;
+	border: none;
+	transition: 0.2s;
 }
 .contact button:hover {
 	cursor: pointer;
+	background-color: var(--strong-yellow);
+	scale: 1.05;
 }

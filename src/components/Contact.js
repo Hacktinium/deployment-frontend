@@ -2,7 +2,7 @@ import "./Contact.css";
 
 const Contact = () => {
 	return (
-		<section className="contact col centre">
+		<section id='Contact' className="contact col centre">
 			{/* <div className="separator"></div> */}
 			<h3>
 				<span>function </span>getInTouch( )

@@ -47,7 +47,7 @@ const Skills = () => {
 	};
 
 	return (
-		<section className="skills col">
+		<section id='Skills' className="skills col">
 			{/* <div className="separator"></div> */}
 			<h3>
 				<span>./</span>skills
@@ -83,9 +83,7 @@ const Skills = () => {
 				</Slider>
 			</div>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis dolor vitae, diam velit venenatis quis nunc cursus. Integer sem lobortis diam vitae tincidunt hac. Tortor hac mi adipiscing
-				ornare dolor quis. Rhoncus vitae
-			</p>
+				Here are the languages, libraries, and frameworks I've been working with recently. I'm always looking to add to this skillset, and deepen my understanding of the ones I already have. If you'd like to work together, don't hesitate to <a href="#Contact">reach out to me</a> below!</p>
 		</section>
 	);
 };
