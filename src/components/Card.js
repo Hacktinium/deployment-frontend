@@ -1,18 +1,27 @@
 import "./Card.css";
 
-const Card = ({ title, thumbnail, link }) => {
+const Card = ({ title, description, thumbnail, demo_link, repo_link }) => {
 	return (
-		<a href={link} className="project-link">
 			<div className="Card">
 				<div className="glass col">
 					<div className="info col">
 						<h3>{title}</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores cumque eius voluptatum qui quos cupiditate odit perferendis ab magni?</p>
+						<p>{description}</p>
+						<div className="links_container row">
+							<span className="demo_links">
+								<a href={demo_link} target="_blank" rel="noreferrer">
+									Demo
+								</a>{" "}
+								|{" "}
+								<a href={repo_link} target="_blank" rel="noreferrer">
+									Repo
+								</a>
+							</span>
+						</div>
 					</div>
 				</div>
 				<img className="card-img" alt={title} src={thumbnail} />
 			</div>
-		</a>
 	);
 };
 

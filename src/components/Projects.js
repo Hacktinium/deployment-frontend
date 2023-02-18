@@ -15,8 +15,10 @@ const Projects = () => {
 								return (
 									<Card
 										title={project.title}
+										description={project.description}
 										thumbnail={project.thumbnail}
-										link={project.link}
+										demo_link={project.demo_link}
+										repo_link={project.repo_link}
 										key={project.id}
 									/>
 								);
