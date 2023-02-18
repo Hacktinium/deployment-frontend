@@ -8,6 +8,9 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+// entry.target.classList.toggle('show', entry.isIntersecting);
+
+
 function App() {
 	return (
 		<div className="container">

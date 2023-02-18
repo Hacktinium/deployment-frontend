@@ -17,7 +17,7 @@
 .glass {
 	justify-content: center;
 	position: absolute;
-	background: rgba(10, 9, 9, 0.662);
+	background: rgba(7, 7, 7, 0.662);
 	border-radius: 0.4rem;
 	backdrop-filter: blur(5px);
 	border: 1px solid rgba(255, 255, 255, 0.3);

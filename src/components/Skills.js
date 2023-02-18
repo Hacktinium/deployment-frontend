@@ -30,7 +30,6 @@ const Skills = () => {
 	};
 
 	const [imageIndex, setImageIndex] = useState(0);
-	console.log(`imageIndex= ${imageIndex}`);
 
 	const settings = {
 		infinite: true,

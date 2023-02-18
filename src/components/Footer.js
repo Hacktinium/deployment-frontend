@@ -1,15 +1,38 @@
+import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
 import "./Footer.css";
-import socials_icons_placeholder from "../assets/images/socials-icons-placeholder.png";
 
-const Footer = () => {
+const socials = [
+	{
+		icon: <AiFillGithub size={55} />,
+		link: "https://github.com/Hacktinium",
+		id: 1,
+	},
+	{
+		icon: <AiFillTwitterCircle size={55} />,
+		link: "https://twitter.com/Hacktinium",
+		id: 2,
+	},
+	{
+		icon: <AiFillLinkedin size={55} />,
+		link: "https://www.linkedin.com/in/stevebeecheno/",
+		id: 3,
+	},
+];
+
+function Footer() {
 	return (
-		<footer className="col centre">
-			<a href="test">
-				<img className="skills-icons-placeholder" alt="social links" src={socials_icons_placeholder} />
-			</a>
-			<p>Made with 😻 by Hacktinium</p>
-		</footer>
+		<div className="socials row">
+			{socials.map((social) => {
+				return (
+					<div key={social.id} className="">
+						<a href={social.link} target="_blank" rel="noreferrer">
+							{social.icon}
+						</a>
+					</div>
+				);
+			})}
+		</div>
 	);
-};
+}
 
 export default Footer;

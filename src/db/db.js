@@ -21,7 +21,7 @@ const projects = [
 		repo_link: "https://github.com/Hacktinium/pokedex",
 		demo_link: "https://hacktinium.github.io/pokedex/",
 		thumbnail: require("../assets/images/project-cards/pokedex.png"),
-		id: 1,
+		id: 3,
 	},
 	{
 		title: "Bot Blogz",

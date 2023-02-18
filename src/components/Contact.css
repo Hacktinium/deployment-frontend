@@ -1,3 +1,6 @@
+.contact {
+	padding-block-end: 5rem;
+}
 .contact form {
 	width: 300px;
 	text-align: left;
@@ -10,7 +13,6 @@ textarea::placeholder {
 	color: var(--medium-blue);
 	opacity: 70%;
 }
-/* TODO: Find a way to do this with flex and no 'width' */
 .contact input,
 select,
 textarea,
@@ -20,9 +22,7 @@ button {
 	margin: 10px 0 44px 0;
 	width: 100%;
 	padding: 12px;
-	/* font-family: arial, sans-serif; */
 	font-family: "Space Grotesk", sans-serif;
-
 	display: block;
 	background-color: var(--dark-blue);
 	border: 2px solid var(--medium-blue);
