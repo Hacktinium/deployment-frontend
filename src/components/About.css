@@ -1,3 +1,7 @@
+.about {
+	padding-block-end: 40%;
+}
+
 .about p {
 	max-width: 60ch;
 }

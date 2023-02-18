@@ -39,7 +39,8 @@ const Skills = () => {
 		slidesToShow: 5,
 		centerMode: true,
 		centerPadding: 0,
-		// autoplay: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
 		nextArrow: <NextArrow />,
 		prevArrow: <PrevArrow />,
 		beforeChange: (current, next) => setImageIndex(next),
@@ -59,28 +60,20 @@ const Skills = () => {
 							className={cx("slide", {
 								activeSlide: idx === imageIndex,
 
-								// targets the slide that is 2 to the right of the active slide when active slide index is < icons.length - 2
+								// targets the slide 'two to the right' of the active slide
 								rightEdgeSlide: imageIndex < icons.length - 2 && idx === imageIndex + 2,
-								// targets the slide that is 2 to the right of the active slide when active slide index is >= icons.length - 2
 								rightEdgeSlide_: imageIndex >= icons.length - 2 && idx === imageIndex + 2 - icons.length,
 
-								// targets the slide that is 2 to the left of the active slide when active slide index is < 2
+								// targets the slide 'two to the left' of the active slide
 								leftEdgeSlide: imageIndex < 2 && idx === imageIndex + icons.length - 2,
-								// targets the slide that is 2 to the left of the active slide when active slide index is >= 2
 								leftEdgeSlide_: imageIndex >= 2 && idx === imageIndex - 2,
 
-								
-
-
-
-								// targets the slide that is 2 to the right of the active slide when active slide index is < icons.length - 2
+								// targets the slide to the right of the active slide
 								rightAdjacentSlide: imageIndex < icons.length - 1 && idx === imageIndex + 1,
-								// targets the slide that is 2 to the right of the active slide when active slide index is >= icons.length - 2
 								rightAdjacentSlide_: imageIndex >= icons.length - 1 && idx === imageIndex + 1 - icons.length,
 
-								// targets the slide that is 2 to the left of the active slide when active slide index is < 2
+								// targets the slide to the left of the active slide
 								leftAdjacentSlide: imageIndex < 1 && idx === imageIndex + icons.length - 1,
-								// targets the slide that is 2 to the left of the active slide when active slide index is >= 2
 								leftAdjacentSlide_: imageIndex >= 1 && idx === imageIndex - 1,
 							})}
 						>

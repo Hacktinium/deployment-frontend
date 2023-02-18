@@ -10,7 +10,7 @@ const NavBar = () => {
 			</label>
 			{/* TODO: Change this styling to be accessible */}
 			<a href="test">
-				<BsSliders className="sliders-icon" />
+				{/* <BsSliders className="sliders-icon" /> */}
 			</a>
 		</nav>
 	);

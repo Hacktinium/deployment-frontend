@@ -1,6 +1,6 @@
 .hero {
-	padding-block-start: 30vh;
-	padding-block-end: 80vh;
+	padding-block-start: 30%;
+	padding-block-end: 40%;
 }
 .hero h1 {
 	font-family: "Space Grotesk", sans-serif;
@@ -8,11 +8,11 @@
 	/*! Need to d/l 'bold' weight */
 	font-weight: 700;
 	color: var(--strong-yellow);
+	text-align: left;
 }
 .hero h2 {
-	/* font-family: arial, sans-serif; */
 	font-family: "Space Grotesk", sans-serif;
-
+	text-align: left;
 	font-size: clamp(32px, 9.8vw, 96px);
 	/*! Need to d/l 'bold' weight */
 	font-weight: 700;

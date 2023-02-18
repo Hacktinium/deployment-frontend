@@ -1,6 +1,10 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+.skills {
+	padding-block-end: 40%;
+}
+
 .slider-wrapper {
 	width: 80%;
 	margin: 0 auto;
