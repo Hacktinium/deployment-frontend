@@ -1,7 +1,8 @@
 .contact {
 	transform: translateX(100%);
 	opacity: 0;
-	padding-block-end: 5rem;
+	height: 60rem;
+	justify-content: center;
 }
 .contact form {
 	width: 300px;

@@ -86,7 +86,7 @@ const Skills = () => {
 				</Slider>
 			</div>
 			<p>
-				Here are the languages, libraries, and frameworks I've been working with recently. I'm always looking to add to this skillset, and deepen my understanding of the ones I already have. If you'd like to work together, don't hesitate to <a href="#Contact">reach out to me</a> below!</p>
+				Here are the languages, libraries, and frameworks I've been working with recently. I'm always looking to add to this skillset, and deepen my understanding of the ones I already have. If you'd like to work together, don't hesitate to reach out to me below!</p>
 		</section>
 	);
 };

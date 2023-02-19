@@ -4,7 +4,8 @@
 .skills {
 	transform: translateX(-100%);
 	opacity: 0;
-	padding-block-end: 25rem;
+	height: 60rem;
+	justify-content: center;
 }
 
 .slider-wrapper {

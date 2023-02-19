@@ -1,6 +1,8 @@
 .hero {
-	padding-block-start: 25rem;
-	padding-block-end: 25rem;
+	height: 100vh;
+}
+.spacer {
+	height: 40vh;
 }
 .hero h1 {
 	font-family: "Space Grotesk", sans-serif;

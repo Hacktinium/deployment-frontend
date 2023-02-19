@@ -38,8 +38,8 @@
 	gap: 44px;
 }
 .container {
-	width: 90vw;
-	margin: 80px auto;
+	width: 90%;
+	margin: 40px auto;
 }
 .row {
 	display: flex;
@@ -54,12 +54,13 @@
 
 .show {
 	opacity: 1;
-	transition: all 1s;
+	transition: all 1.5s;
 	transform: translateX(0);
 }
 
 /* !Global Styles */
 body, html {
+	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: var(--lightest-blue);
@@ -69,7 +70,6 @@ body, html {
 .main {
 	display: flex;
 	flex-direction: column;
-	gap: 10rem;
 }
 
 a {

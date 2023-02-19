@@ -4,6 +4,7 @@ import "./Hero.css";
 const Hero = () => {
 	return (
 		<section id="Hero" className="hero multipleStrings">
+		<div className="spacer"></div>
 			<TypeIt
 				as="h1"
 				options={{ speed: 60, loop: true, loopDelay: 2000, lifeLike: true }}
@@ -13,6 +14,7 @@ const Hero = () => {
 						.type(`Hi! `)
 						.pause(250)
 						.type(`I'm `)
+						.break()
 						.type(`<span style="color:var(--medium-blue);">Steeve.</span>`)
 						.pause(650)
 						.move(-3)
@@ -35,11 +37,11 @@ const Hero = () => {
 						.pause(950)
 						.delete(20)
 						.pause(500)
-						.type(`<span style="color:var(--medium-blue);">a lover of 🍕.</span>`)
+						.type(`<span style="color:var(--medium-blue);">a lover of pizza.</span>`)
 						.pause(950)
-						.delete(13)
+						.delete(17)
 						.pause(500)
-						.type(`<span style="color:var(--medium-blue);">oversharing, pehaps\? 🤔</span>`)
+						.type(`<span style="color:var(--medium-blue);">oversharing, pehaps\?</span>`)
 						.pause(850);
 					return instance;
 				}}
