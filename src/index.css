@@ -52,6 +52,12 @@
 	border-radius: 0.5px;
 }
 
+.show {
+	opacity: 1;
+	transition: all 1s;
+	transform: translateX(0);
+}
+
 /* !Global Styles */
 body, html {
 	-webkit-font-smoothing: antialiased;

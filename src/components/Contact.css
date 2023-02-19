@@ -1,4 +1,6 @@
 .contact {
+	transform: translateX(100%);
+	opacity: 0;
 	padding-block-end: 5rem;
 }
 .contact form {

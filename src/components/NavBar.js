@@ -8,10 +8,8 @@ const NavBar = () => {
 				<input type="checkbox" />
 				<span className="slider round"></span>
 			</label>
-			{/* TODO: Change this styling to be accessible */}
-			<a href="test">
-				{/* <BsSliders className="sliders-icon" /> */}
-			</a>
+
+			<a href="test">{/* <BsSliders className="sliders-icon" /> */}</a>
 		</nav>
 	);
 };

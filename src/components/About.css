@@ -1,4 +1,6 @@
 .about {
+	transform: translateX(-100%);
+	opacity: 0;
 	padding-block-end: 25rem;
 }
 

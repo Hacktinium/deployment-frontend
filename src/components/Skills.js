@@ -9,6 +9,7 @@ import postgresql from "../assets/skills-icons/postgresql.svg";
 import js from "../assets/skills-icons/js.svg";
 import ts from "../assets/skills-icons/ts.svg";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
 
 const icons = [html5, css3, node, postgresql, js, ts];
 
@@ -20,7 +21,7 @@ const Skills = () => {
 			</div>
 		);
 	};
-
+	
 	const PrevArrow = ({ onClick }) => {
 		return (
 			<div className="arrow prev" onClick={onClick}>
@@ -28,9 +29,9 @@ const Skills = () => {
 			</div>
 		);
 	};
-
+	
 	const [imageIndex, setImageIndex] = useState(0);
-
+	
 	const settings = {
 		infinite: true,
 		lazyLoad: true,
@@ -45,8 +46,11 @@ const Skills = () => {
 		beforeChange: (current, next) => setImageIndex(next),
 	};
 
+	const { ref, inView } = useInView();
+	
 	return (
-		<section id='Skills' className="skills col">
+		<section id='Skills' ref={ref} className={inView ? 'show skills col centre' : 'skills col centre'}
+		>
 			{/* <div className="separator"></div> */}
 			<h3>
 				<span>./</span>skills

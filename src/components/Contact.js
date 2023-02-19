@@ -1,9 +1,11 @@
 import "./Contact.css";
+import { useInView } from "react-intersection-observer";
 
 const Contact = () => {
+	const { ref, inView } = useInView();
+
 	return (
-		<section id='Contact' className="contact col centre">
-			{/* <div className="separator"></div> */}
+		<section id="Contact" ref={ref} className={inView ? "show contact col centre" : "contact col centre"}>
 			<h3>
 				<span>function </span>getInTouch( )
 			</h3>
